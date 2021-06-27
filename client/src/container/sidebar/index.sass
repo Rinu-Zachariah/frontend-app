@@ -1,0 +1,37 @@
+.nav-menu
+  background: $white
+  margin-top: $header-height 
+  width: $sidebar-width
+  height: 100vh
+  display: flex
+  justify-content: center
+  position: fixed
+  top: 0
+  left: -100%
+  transition: 850ms
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+  &.active
+    left: 0
+    transition: 350ms
+  &-items
+    width: 100%
+    list-style-type: none
+    color: $primary-text
+    padding: 0
+    margin: 0
+    li
+      margin: $default-margin - 10 5px
+      padding: $default-padding $default-padding - 10
+      &:hover
+        background: #e8e8e8
+        cursor: pointer
+        border-left: 5px solid $primary-color
+      img
+        padding: 0 10px 0 0
+        position: relative
+        top: 5px
+        left: 5px
+    &-active
+      background: #e8e8e8
+      cursor: pointer
+      border-left: 5px solid $primary-color

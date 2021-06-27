@@ -1,0 +1,47 @@
+.budget-container
+  &-exclude
+    margin: $default-margin + 5 0
+  &-amount
+    font-weight: $font-weight-bolder
+    display: inline-block
+    &-input
+      margin: 0 0 0 $default-margin - 5
+      width: 75%
+  &-content
+    margin: $default-margin 0
+  &-content:after
+    content: ""
+    display: table
+    clear: both
+  &-column
+    float: left
+    width: 33.33%
+    &-radio
+      float: left
+      width: 16.66%
+  &-input
+    padding: $default-padding
+    border: 1px solid $grey
+    color: $primary-text
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+    outline: none
+    background-color: $gray
+
+input[type="radio"]
+  opacity: 0
+  position: fixed
+  width: 0
+.budget-container-column-radio
+  label
+    display: inline-block
+    background-color: $gray
+    padding: $default-padding - 5 $default-padding + 5
+    font-size: 16px
+    border: 2px solid $grey
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+    border-radius: 4px
+    &:hover
+      background-color: $primary-color
+input[type="radio"]:checked + label
+    background-color: $primary-color
+    border-color: $primary-color

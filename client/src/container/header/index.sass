@@ -1,0 +1,30 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: $header-height
+  background-color: $primary-color
+  color: $white
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 1000
+  &__icons
+    i
+      margin-right: 25px
+      font-size: 20px
+  &__home
+    display: flex
+    align-self: stretch
+    align-items: center
+    span
+      font-size: 24px
+      font-weight: bolder
+      padding-left: 10px
+  &__logo
+    margin: 0
+    height: 50px
+    width: $header-height
+    color: $white
+    font-weight: $font-weight-bolder

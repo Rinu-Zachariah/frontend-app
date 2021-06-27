@@ -1,0 +1,51 @@
+.media-plan
+  margin-top: $header-height + 20
+  margin-left: $sidebar-width
+  &-heading
+    padding: $default-padding
+    color: $white
+    margin: 0
+    margin-block-end: 0
+    margin-block-start: 0
+    background: $primary-color
+  &-context
+    padding: $default-padding
+  &-container
+    background-color: $white
+    border-radius: 5px
+    margin: $default-margin
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+    &-label
+      margin: $default-margin + 5 0
+      font-weight: $font-weight-bolder
+      color: $primary-text
+    &-input
+      padding: $default-padding
+      font-size: $default-font-size
+      border: 1px solid $grey
+      color: $primary-text
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+      width: 95%
+      background-color: $gray
+      outline: none
+    &-datepicker:after
+      content: ""
+      display: table
+      clear: both
+    &-column
+      float: left
+      width: 50%
+
+.react-datepicker
+  &-wrapper
+    width: 85%
+  &__input-container
+    input
+      padding: $default-padding
+      font-size: $default-font-size
+      border: 1px solid $grey
+      color: $primary-text
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+      width: 100%
+      outline: none
+      background-color: $gray
